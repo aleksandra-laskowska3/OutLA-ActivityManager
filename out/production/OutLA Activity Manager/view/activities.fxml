@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="appointmentsForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.activityController">
+    <children>
+        <TextField disable="true" editable="false" layoutX="-7.0" opacity="0.67" prefHeight="29.0" prefWidth="1045.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #7393B3;" />
+        <Label layoutX="472.0" layoutY="5.0" text="Activities">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="activityTableView" layoutY="72.0" prefHeight="273.0" prefWidth="1037.0">
+            <columns>
+                <TableColumn fx:id="activityIDCol" prefWidth="64.0" text="Activity ID" />
+                <TableColumn fx:id="titleColumn" minWidth="0.0" prefWidth="139.0" text="Title" />
+                <TableColumn fx:id="descriptionColumn" prefWidth="164.0" text="Description" />
+                <TableColumn fx:id="locationColumn" prefWidth="151.0" text="Location" />
+                <TableColumn fx:id="priceCol" prefWidth="57.0" text="Price" />
+                <TableColumn fx:id="petCol" prefWidth="65.0" text="Pet" />
+                <TableColumn fx:id="startColumn" prefWidth="146.0" text="Start Date &amp; Time" />
+                <TableColumn fx:id="endColumn" prefWidth="138.0" text="End Date &amp; Time" />
+                <TableColumn fx:id="friendIDCol" prefWidth="112.0" text="Friend ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="addActButton" layoutX="461.0" layoutY="371.0" mnemonicParsing="false" onAction="#addActButton" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: #B7CFDE;" text="Add" />
+        <Button layoutX="560.0" layoutY="371.0" mnemonicParsing="false" onAction="#updateActButton" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: #B7CFDE;" text="Update" />
+        <Button layoutX="664.0" layoutY="371.0" mnemonicParsing="false" onAction="#deleteActButton" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: #B7CFDE;" text="Delete" />
+        <Button layoutX="788.0" layoutY="425.0" mnemonicParsing="false" onAction="#actMainMenuButton" prefHeight="39.0" prefWidth="88.0" text="Main Menu" />
+        <Button layoutX="911.0" layoutY="425.0" mnemonicParsing="false" onAction="#actSignOutButton" prefHeight="39.0" prefWidth="88.0" text="Sign Out" />
+        <RadioButton fx:id="actMonthRadioButton" layoutX="664.0" layoutY="43.0" mnemonicParsing="false" onAction="#switchToMonth" selected="true" text="Month">
+            <toggleGroup>
+                <ToggleGroup fx:id="appButtons" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="actWeekRadioButton" layoutX="779.0" layoutY="43.0" mnemonicParsing="false" onAction="#switchToWeek" text="Week" toggleGroup="$appButtons" />
+        <RadioButton fx:id="allActRadioButton" layoutX="560.0" layoutY="43.0" mnemonicParsing="false" onAction="#switchToAll" selected="true" text="All" toggleGroup="$appButtons" />
+        <TextField fx:id="activitySearch" layoutX="853.0" layoutY="39.0" onAction="#activityLookUp" prefHeight="26.0" prefWidth="169.0" promptText="Search by Activity ID or Title" />
+    </children>
+</AnchorPane>

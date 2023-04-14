@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerRecordsForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.friendController">
+    <children>
+        <TextField disable="true" editable="false" layoutY="-2.0" opacity="0.67" prefHeight="29.0" prefWidth="665.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #7393B3;" />
+        <Label layoutX="321.0" layoutY="5.0" text="Friends">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="friendTableView" layoutY="27.0" prefHeight="257.0" prefWidth="665.0">
+            <columns>
+                <TableColumn fx:id="friendIDCol" prefWidth="61.0" text="Friend ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="119.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="180.0" text="Address" />
+                <TableColumn fx:id="phoneCol" prefWidth="92.0" text="Phone Number" />
+                <TableColumn fx:id="foodCol" prefWidth="112.0" text="Favorite Cuisine" />
+                <TableColumn fx:id="timeCol" prefWidth="100.0" text="Best Free Time" />
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" layoutX="482.0" layoutY="293.0" mnemonicParsing="false" onAction="#addButtonHandler" style="-fx-background-color: #B7CFDE;" text="Add" />
+        <Button fx:id="updateButton" layoutX="528.0" layoutY="293.0" mnemonicParsing="false" onAction="#updateButtonHandler" style="-fx-background-color: #B7CFDE;" text="Update" />
+        <Button fx:id="deleteButton" layoutX="592.0" layoutY="293.0" mnemonicParsing="false" onAction="#deleteButtonHandler" style="-fx-background-color: #B7CFDE;" text="Delete" />
+        <Button fx:id="mainMenuButton" layoutX="496.0" layoutY="406.0" mnemonicParsing="false" onAction="#mainMenuButtonHandler" text="Main Menu" />
+        <Button fx:id="signOutButton" layoutX="586.0" layoutY="406.0" mnemonicParsing="false" onAction="#signOutButtonHandler" text="Sign Out" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="addCustomerForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updateFriendController">
+   <children>
+      <TextField disable="true" editable="false" layoutY="-2.0" opacity="0.67" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #7393B3;" />
+      <Label layoutX="250.0" layoutY="3.0" text="Update Friend">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="96.0" text="Name" />
+      <Label layoutX="30.0" layoutY="139.0" text="Address" />
+      <Label layoutX="29.0" layoutY="178.0" text="Phone Number" />
+      <TextField fx:id="updateNameTxt" layoutX="119.0" layoutY="91.0" />
+      <TextField fx:id="updateAddressTxt" layoutX="119.0" layoutY="134.0" />
+      <TextField fx:id="updatePhoneTxt" layoutX="119.0" layoutY="173.0" />
+      <Label layoutX="145.0" layoutY="228.0" text="Favorite Cuisine" />
+      <ComboBox fx:id="updateTimeComboBox" layoutX="259.0" layoutY="268.0" onAction="#timeComboBox" prefWidth="150.0" />
+      <Label layoutX="148.0" layoutY="273.0" text="Best Free Time" />
+      <Button layoutX="425.0" layoutY="344.0" mnemonicParsing="false" onAction="#updateSaveButton" style="-fx-background-color: #B7CFDE;" text="Save" />
+      <Button layoutX="500.0" layoutY="344.0" mnemonicParsing="false" onAction="#updateCancelButton" style="-fx-background-color: #B7CFDE;" text="Cancel" />
+      <ComboBox fx:id="updateFoodComboBox" layoutX="259.0" layoutY="223.0" onAction="#foodComboBox" prefWidth="150.0" />
+      <TextField fx:id="updateIDTxt" disable="true" layoutX="119.0" layoutY="53.0" />
+      <Label layoutX="42.0" layoutY="58.0" text="ID" />
+   </children>
+</AnchorPane>

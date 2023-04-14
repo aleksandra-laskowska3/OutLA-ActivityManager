@@ -1,0 +1,22 @@
+QAM2 Task 1
+Purpose of Application
+-Scheduling System application which uses a GUI to schedule activities with friends and runs reports.
+
+Author: Aleksandra Laskowska
+Contact Information: alaskows@wgu.edu
+Application Version: 1.0
+Date: 04/06/2023
+
+IDE and Java Information:
+IntelliJ IDEA Community Edition 2021.1.3x64
+Java SE 17.0.1
+JavaFX-SDK-17.0.1
+mysql connector: mysql-connector-java-8.0.25
+
+How to Run Program:
+Import zipped application into IntelliJ, then open and run application. The correct login credentials are username:1234 password:activity1 or
+Database Connection String: username:root port:3306 password:database database name: OutLAdb
+
+
+
+

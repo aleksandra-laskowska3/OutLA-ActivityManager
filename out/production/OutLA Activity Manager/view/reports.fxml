@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportsForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsController">
+    <children>
+        <TextField disable="true" editable="false" layoutX="-7.0" opacity="0.67" prefHeight="29.0" prefWidth="923.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #7393B3;" />
+        <Label layoutX="413.0" layoutY="5.0" text="Reports">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="48.0" text="Activity Schedule for (pick a friend)" />
+        <TableView fx:id="friendScheduleTableView" layoutX="14.0" layoutY="82.0" prefHeight="200.0" prefWidth="891.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="63.93935680389404" text="Activity ID" />
+                <TableColumn fx:id="titleCol" prefWidth="153.56066131591797" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="159.85366821289062" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="155.13644409179688" text="Location" />
+                <TableColumn fx:id="priceCol" prefWidth="59.86358642578125" text="Price" />
+                <TableColumn fx:id="petCol" prefWidth="51.1514892578125" text="Pet " />
+                <TableColumn fx:id="startCol" prefWidth="127.34857177734375" text="Start Date &amp; Time" />
+                <TableColumn fx:id="endCol" prefWidth="127.34857177734375" text="End Date &amp; Time" />
+            </columns>
+        </TableView>
+        <Button fx:id="reportMainMenuButton" layoutX="809.0" layoutY="570.0" mnemonicParsing="false" onAction="#reportMainMenuButtonHandler" style="-fx-background-color: #B7CFDE;" text="Main Menu" />
+        <ComboBox fx:id="friendComboBox" layoutX="219.0" layoutY="44.0" onAction="#friendComboBoxHandler" prefWidth="150.0" />
+        <Label layoutX="23.0" layoutY="301.0" prefHeight="17.0" prefWidth="278.0" text="Friend List Based On Favorite Cuisine (pick cuisine)" />
+        <ComboBox fx:id="foodComboBox" layoutX="310.0" layoutY="297.0" onAction="#foodComboBox" prefWidth="150.0" />
+        <TableView fx:id="friendTableView" layoutX="21.0" layoutY="333.0" prefHeight="223.0" prefWidth="578.0">
+            <columns>
+                <TableColumn fx:id="friendIDCol" prefWidth="61.0" text="Friend ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="119.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="180.0" text="Address" />
+                <TableColumn fx:id="phoneCol" prefWidth="92.0" text="Phone Number" />
+                <TableColumn fx:id="timeCol" prefWidth="124.0" text="Best Free Time" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

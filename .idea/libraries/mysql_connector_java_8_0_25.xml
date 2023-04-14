@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.25">
+    <CLASSES>
+      <root url="file://$PATH_TO_FX$" />
+      <root url="file://$PATH_TO_FX$" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PATH_TO_FX$" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.base" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.controls" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.fxml" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.graphics" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.media" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.swing" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-18.0.2/src/javafx.web" />
+    </SOURCES>
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+  </library>
+</component>
